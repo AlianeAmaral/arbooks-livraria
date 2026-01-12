@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Arbooks.Business.Models
+namespace Arbooks.Web.Models
 {
     public class Specification
     {

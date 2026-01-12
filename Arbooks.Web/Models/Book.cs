@@ -1,4 +1,4 @@
-﻿namespace Arbooks.Business.Models
+﻿namespace Arbooks.Web.Models
 {
     public class Book
     {
