@@ -39,6 +39,19 @@ namespace Arbooks.API.Controllers
                 return Ok(bookList);
         }
 
+        [HttpGet("details")]
+        public IActionResult Details(int id)
+        {
+            var book = new BookRepository()
+                .Load()
+                .FirstOrDefault(book => book.id == id);
+
+            if (book == null)
+                return NotFound();
+
+            return Ok(book);
+        }
+
         [HttpGet("calculateshipping")]
         public IActionResult CalculateShipping(int id)
         {
