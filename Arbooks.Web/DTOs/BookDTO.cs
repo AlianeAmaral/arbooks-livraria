@@ -1,10 +1,10 @@
-﻿namespace Arbooks.Business.Models
+﻿namespace Arbooks.Web.DTOs
 {
-    public class Book
+    public class BookDTO
     {
         public int id { get; set; }
         public string name { get; set; }
         public decimal price { get; set; }
-        public Specification specifications { get; set; }
+        public SpecificationDTO specifications { get; set; }
     }
 }

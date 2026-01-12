@@ -1,8 +1,8 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Arbooks.Business.Models
+namespace Arbooks.Web.DTOs
 {
-    public class Specification
+    public class SpecificationDTO
     {
         [JsonPropertyName("Originally published")]
         public string originallyPublished { get; set; }

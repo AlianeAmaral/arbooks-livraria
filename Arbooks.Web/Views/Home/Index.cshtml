@@ -1,4 +1,4 @@
-﻿@model Book
+﻿@model BookDTO
 
 @{
     ViewData["Title"] = "Catalog";
@@ -48,7 +48,7 @@
             <th>Price</th>
             <th>Author</th>
         </tr>
-        @foreach (var item in (List<Book>)ViewData["bookList"])
+        @foreach (var item in (List<BookDTO>)ViewData["bookList"])
         {
             <tr>
                 <td>@item.id</td>

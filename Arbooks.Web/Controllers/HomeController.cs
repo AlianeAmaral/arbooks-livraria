@@ -1,4 +1,4 @@
-using Arbooks.Web.Models;
+using Arbooks.Web.DTOs;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 
@@ -18,7 +18,7 @@ namespace Arbooks.Web.Controllers
         {
             var response = await _httpClient.GetAsync("http://localhost:5013/book/search?term=" + search + "&order=" + order);
             var jsonString = await response.Content.ReadAsStringAsync();
-            var bookList = JsonSerializer.Deserialize<List<Book>>(jsonString);
+            var bookList = JsonSerializer.Deserialize<List<BookDTO>>(jsonString);
 
             ViewData["bookList"] = bookList;
             ViewData["search"] = search;
@@ -32,7 +32,7 @@ namespace Arbooks.Web.Controllers
         {
             var response = await _httpClient.GetAsync("http://localhost:5013/book/details?id=" + id);
             var jsonString = await response.Content.ReadAsStringAsync();
-            var book = JsonSerializer.Deserialize<Book>(jsonString);
+            var book = JsonSerializer.Deserialize<BookDTO>(jsonString);
 
             return View(book);
         }
@@ -42,7 +42,7 @@ namespace Arbooks.Web.Controllers
         {
             var response = await _httpClient.GetAsync("http://localhost:5013/book/details?id=" + id);
             var jsonString = await response.Content.ReadAsStringAsync();
-            var book = JsonSerializer.Deserialize<Book>(jsonString);
+            var book = JsonSerializer.Deserialize<BookDTO>(jsonString);
 
             if (book == null)
                 return NotFound();

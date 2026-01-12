@@ -1,4 +1,4 @@
-﻿namespace Arbooks.Web.Models
+﻿namespace Arbooks.Business.Models
 {
     public class ErrorViewModel
     {

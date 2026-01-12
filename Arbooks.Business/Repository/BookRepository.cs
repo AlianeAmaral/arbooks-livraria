@@ -1,5 +1,5 @@
 ﻿using System.Text.Json;
-using Arbooks.Business.Models;
+using Arbooks.Business.DTOs;
 
 namespace Arbooks.Business.Repository
 {
@@ -9,10 +9,10 @@ namespace Arbooks.Business.Repository
         {
         }
 
-        public List<Book> Load()
+        public List<BookDTO> Load()
         {
             var jsonContent = File.ReadAllText("..\\Arbooks.Business\\books.json");
-            var listBook = JsonSerializer.Deserialize<List<Book>>(jsonContent);
+            var listBook = JsonSerializer.Deserialize<List<BookDTO>>(jsonContent);
 
             return listBook;
         }
