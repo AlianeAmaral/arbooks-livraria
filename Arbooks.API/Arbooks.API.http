@@ -1,0 +1,6 @@
+@Arbooks.API_HostAddress = http://localhost:5043
+
+GET {{Arbooks.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
