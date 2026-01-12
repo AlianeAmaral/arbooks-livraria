@@ -7,7 +7,6 @@ namespace Arbooks.API.Controllers
     [Route("book")]
     public class BookController : ControllerBase
     {
-
         public BookController() { }
 
         [HttpGet("search")]
@@ -30,8 +29,13 @@ namespace Arbooks.API.Controllers
                 )
                 .ToList();
             }
-
-            return Ok(bookList);
+                bookList = order switch
+                {
+                    "priceAsc" => bookList.OrderBy(book => book.price).ToList(),
+                    "priceDesc" => bookList.OrderByDescending(book => book.price).ToList(),
+                    _ => bookList
+                };
+                return Ok(bookList);
         }
     }
 }
