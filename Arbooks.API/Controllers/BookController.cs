@@ -1,4 +1,5 @@
 ﻿using Arbooks.Business.Repository;
+using Arbooks.Business.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Arbooks.API.Controllers
@@ -36,6 +37,22 @@ namespace Arbooks.API.Controllers
                     _ => bookList
                 };
                 return Ok(bookList);
+        }
+
+        [HttpGet("calculateshipping")]
+        public IActionResult CalculateShipping(int id)
+        {
+            var book = new BookRepository()
+                .Load()
+                .FirstOrDefault(book => book.id == id);
+
+            if (book == null)
+                return NotFound();
+
+            var shippingService = new ShippingService();
+            var shippingValue = shippingService.Calculate(book.price);
+
+            return Ok(shippingValue);
         }
     }
 }
