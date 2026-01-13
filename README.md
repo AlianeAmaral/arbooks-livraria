@@ -11,11 +11,12 @@
 
 Projeto com **Back-end e Front-end** desenvolvido com API RESTful para um **desafio técnico**, com intuito de criar um **catálogo de livros** a partir de um arquivo JSON estático, que não podia ser modificado. <br><br> Foi construído com **C#, ASP .NET Core (Versão 8.0), HTML, CSS e Javascript, com arquitetura em camadas.** Este projeto fornece funcionalidades de **busca flexível, ordenação por preço, cálculo de frete e exibição de detalhes** utilizando **rotas**. <br><br> Iniciado primeiro como monólito no dia 09/01/26 mas depois alterado para microsserviços para entrega com front-end em 12/01/26. Como o arquivo JSON estava em **inglês**, foi mantido o mesmo **idioma inglês como padrão para seguir com todo desenvolvimento em código**.
 
-<img src="https://github.com/AlianeAmaral/arbooks-livraria/blob/main/Arbooks.Web/wwwroot/icon-arbooks.png" width="40">   O nome **“Arbooks”** foi escolhido como uma referência ao Pokémon **Arbok**, do anime *Pokémon*, combinado com a palavra **“Books”**, em alusão ao catálogo de livros proposto.
+<img src="https://github.com/AlianeAmaral/arbooks-livraria/blob/main/Arbooks.Web/wwwroot/icon-arbooks.png" width="40">   O nome **“Arbooks”** foi escolhido como uma referência ao Pokémon **Arbok**, do anime *Pokémon*, combinado com a palavra **“Books”**, em alusão ao catálogo de livros proposto. <br><br>
+*As instruções relacionadas ao Visual Studio neste README.md, seguem passos da ferramenta no idioma PT-BR.*
 
 <h2>👩🏻‍💻 Desenvolvimentos Realizados</h2>
 
-* 📄 Apresentação do catálogo em JSON.
+* 📄 Apresentação do catálogo JSON.
 * 🔍 Busca flexível por nome, autor ou outros dados (indiferente da digitação).
 * 📊 Ordenação por preço de forma ascedente ou decrescente (lista completa ou em resultados).
 * 📘 Exibição dos detalhes de cada livro em outra página.
@@ -199,6 +200,7 @@ Para nos enviar o código, crie um fork desse repositório e quando finalizar, m
 O projeto deve ser desenvolvido em C#, utilizando o .NET Core 3.1 ou superior.
 
 Gostaríamos que fosse evitado a utilização de frameworks, e que tivesse uma explicação do que é necessário para funcionar o projeto e os testes.
+
 
 
 
