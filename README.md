@@ -16,8 +16,8 @@ Projeto com **Back-end e Front-end** desenvolvido com API RESTful para um **desa
 <h2>👩🏻‍💻 Desenvolvimentos Realizados</h2>
 
 * 📄 Apresentação do catálogo em JSON.
-* 🔍 Busca flexível por nome, autor ou outros dados (indiferente de maiúsculas/minúsculas, acentos ou palavra incompleta).
-* 📊 Ordenação por preço de forma ascedente ou decrescente (tanto na lista completa quanto em resultados da busca).
+* 🔍 Busca flexível por nome, autor ou outros dados (indiferente da digitação).
+* 📊 Ordenação por preço de forma ascedente ou decrescente (lista completa ou em resultados).
 * 📘 Exibição dos detalhes de cada livro em outra página.
 * 💰 Cálculo do frete baseado em 20% do valor do livro.
 * 🎨 *Front-end interativo* desenvolvido como bônus, além da possibilidade de teste via Swagger.
@@ -77,7 +77,7 @@ dotnet run
 1. Ou caso queira executar via Visual Studio, clone o repositório e acesse a solução.
 2. No **Gerenciador de Soluções**, clique com botão direito no projeto **"Arbooks.API"**.
 3. Clique em **"Depurar"** e depois em **"Iniciar Nova Instância"**.
-4. Uma página vai abrir automaticamente no seu navegador permitindo realizar os seguintes testes:
+4. Uma página vai abrir automaticamente no seu navegador permitindo realizar os testes abaixo.
 
 📌 Permite testar a busca com letras maiúsculas, minúsculas, acentos, palavras incompletas ou especificações que estão nos detalhes, assim como a ordem de preço crescente ou decrescente, tanto para a lista total quanto para os resultados de uma busca:
 
@@ -129,7 +129,7 @@ GET book/calculateshipping
 * 2º: Arbooks.Web
 
 4. Clique em **"Ok"** e inicie o projeto na interface da IDE ou no terminal com: dotnet run.
-5. Uma página do navegador deve abrir o site com back-end e front-end funcionando para você interagir igual o gif apresentado mais ao topo desse README.
+5. Uma página do navegador deve abrir o site com back-end e front-end funcionando para você interagir.
    
 <h2>🧪 Como Executar os Testes Unitários</h2>
 
@@ -199,6 +199,7 @@ Para nos enviar o código, crie um fork desse repositório e quando finalizar, m
 O projeto deve ser desenvolvido em C#, utilizando o .NET Core 3.1 ou superior.
 
 Gostaríamos que fosse evitado a utilização de frameworks, e que tivesse uma explicação do que é necessário para funcionar o projeto e os testes.
+
 
 
 
