@@ -1,6 +1,6 @@
 <table> 
     <td align="left">
-        <img src="https://github.com/AlianeAmaral/Test/blob/main/icon-arbooks.gif" width="90">
+        <img src="https://github.com/AlianeAmaral/arbooks-livraria/blob/main/Arbooks.Web/wwwroot/images/icon-gif-arbooks.gif" width="90">
     </td>
     <td width="750">
         <h1>Arbooks API - Catálogo de Livros ✨</h1>
@@ -199,6 +199,7 @@ Para nos enviar o código, crie um fork desse repositório e quando finalizar, m
 O projeto deve ser desenvolvido em C#, utilizando o .NET Core 3.1 ou superior.
 
 Gostaríamos que fosse evitado a utilização de frameworks, e que tivesse uma explicação do que é necessário para funcionar o projeto e os testes.
+
 
 
 
