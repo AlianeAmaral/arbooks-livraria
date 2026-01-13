@@ -107,11 +107,11 @@ GET book/details
     2
 ```
 
-📌 Permite testar o cálculo de frete por ID:
+📌 Permite testar o cálculo de frete por livro:
 ```directory
 GET book/calculateshipping
 ```
-💭 Sugestões de entrada, para busca:
+💭 Sugestões de entrada, para cálculo do frete por objeto ID:
 ```directory
     1
 ```
@@ -199,6 +199,7 @@ Para nos enviar o código, crie um fork desse repositório e quando finalizar, m
 O projeto deve ser desenvolvido em C#, utilizando o .NET Core 3.1 ou superior.
 
 Gostaríamos que fosse evitado a utilização de frameworks, e que tivesse uma explicação do que é necessário para funcionar o projeto e os testes.
+
 
 
 
