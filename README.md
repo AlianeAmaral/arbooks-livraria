@@ -9,12 +9,12 @@
 
 <h2>📝 Sobre o Projeto </h2>
 
-Projeto com **back-end e front-end** desenvolvido com API RESTful para um **desafio técnico**, com intuito de criar um **serviço de catálogo de livros** a partir de um arquivo JSON estático, que não podia ser modificado. <br><br> Foi construído com **C#, ASP .NET Core (Versão 8.0), HTML, CSS e Javascript, com arquitetura em camadas.** Este projeto fornece funcionalidades de **busca flexível, ordenação por preço, cálculo de frete e exibição de detalhes** utilizando rotas.
+Projeto com **back-end e front-end** desenvolvido com API RESTful para um **desafio técnico**, com intuito de criar um **serviço de catálogo de livros** a partir de um arquivo JSON estático, que não podia ser modificado. <br><br> Foi construído com **C#, ASP .NET Core (Versão 8.0), HTML, CSS e Javascript, com arquitetura em camadas.** Este projeto fornece funcionalidades de **busca flexível, ordenação por preço, cálculo de frete e exibição de detalhes** utilizando rotas. Foi iniciado primeiro como monólito no dia 09/01/26 mas depois alterado para microsserviços para entrega em 12/01/26.
 
 <h2>👩🏻‍💻 Desenvolvimentos Realizados</h2>
 
 * 📄 Apresentação da lista JSON.
-* 🔍 Busca flexível por nome, autor ou outros dados (indiferente de serem maiúsculas ou minúsculas, acentos ou palavra incompleta).
+* 🔍 Busca flexível por nome, autor ou outros dados (indiferente de maiúsculas/minúsculas, acentos ou palavra incompleta).
 * 📊 Ordenação por preço de forma ascedente ou decrescente (tanto na lista completa quanto em resultados da busca).
 * 📘 Exibição dos detalhes de cada livro em outra página.
 * 💰 Cálculo do frete baseado em 20% do valor do livro.
@@ -40,7 +40,7 @@ Projeto com **back-end e front-end** desenvolvido com API RESTful para um **desa
 
 <h2>📦 Requisitos para Execução</h2>
 
-* Microsoft Visual Studio 17.12.1 ou Superior
+* Microsoft Visual Studio 17.12.1 ou Superior (Em caso de visualização por IDE)
 * .NET Core 8 ou Superior
 * Git (Clonagem do Repositório)
 
@@ -148,6 +148,7 @@ Para nos enviar o código, crie um fork desse repositório e quando finalizar, m
 O projeto deve ser desenvolvido em C#, utilizando o .NET Core 3.1 ou superior.
 
 Gostaríamos que fosse evitado a utilização de frameworks, e que tivesse uma explicação do que é necessário para funcionar o projeto e os testes.
+
 
 
 
