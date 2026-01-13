@@ -46,6 +46,15 @@ Projeto com **Back-end e Front-end** desenvolvido com API RESTful para um **desa
 * .NET Core 8 ou Superior
 * Git (Clonagem do Repositório)
 
+<h2>🚀 Releases</h2>
+
+Este projeto também conta com **"Release"**, que mostra duas imagens de cada fase do desenvolvimento:
+
+* **Version1-BackendOnly:** Mostra como ficou a interface somente com o back-end.
+* **Version2-Backend-Frontend:** Mostra como ficou a interface com back-end e front-end.
+
+* **Link dos Releases**: https://github.com/AlianeAmaral/arbooks-livraria/releases
+
 <h2>🔎 Como Executar o Projeto via Swagger (Visualização do Back-end)</h2>
 
 1. Clone o repositório no seu Visual Studio e acesse a solução:
@@ -73,15 +82,6 @@ GET book/details
 GET book/calculateshipping
 ```
 * Permite testar o cálculo de frete por ID.
-
-<h2>🚀 Releases</h2>
-
-Este projeto também conta com **"Release"**, que mostra duas imagens de cada fase do desenvolvimento:
-
-* **Version1-BackendOnly:** Mostra como ficou a interface somente com o back-end.
-* **Version2-Backend-Frontend:** Mostra como ficou a interface com back-end e front-end.
-
-* **Link dos Releases**: https://github.com/AlianeAmaral/arbooks-livraria/releases
 
 <h2>🖼️ Como Executar o Projeto (Visualização com Front-end)</h2>
 
@@ -159,6 +159,7 @@ Para nos enviar o código, crie um fork desse repositório e quando finalizar, m
 O projeto deve ser desenvolvido em C#, utilizando o .NET Core 3.1 ou superior.
 
 Gostaríamos que fosse evitado a utilização de frameworks, e que tivesse uma explicação do que é necessário para funcionar o projeto e os testes.
+
 
 
 
