@@ -23,7 +23,7 @@ Projeto com **back-end e front-end** desenvolvido com API RESTful para um **desa
 
 <h2>❤️ Apresentação do Projeto</h2>
 
-[GIF da aplicação]
+<img src="https://github.com/AlianeAmaral/arbooks-livraria/blob/main/Arbooks.Web/wwwroot/images/apresentacao-teste-back-e-front.gif" width="850">
 
 <h2>👾 Tecnologias Utilizadas</h2>
 
@@ -57,7 +57,7 @@ cd arbooks-livraria
 
 * **Link do Swagger:** http://localhost:5013/swagger/index.html
 
-[imagem do swagger aqui]
+<img src="https://github.com/AlianeAmaral/arbooks-livraria/blob/main/Arbooks.Web/wwwroot/images/apresentacao-swagger.png" width="850">
 
 ```directory
 GET book/search
@@ -139,4 +139,5 @@ Para nos enviar o código, crie um fork desse repositório e quando finalizar, m
 O projeto deve ser desenvolvido em C#, utilizando o .NET Core 3.1 ou superior.
 
 Gostaríamos que fosse evitado a utilização de frameworks, e que tivesse uma explicação do que é necessário para funcionar o projeto e os testes.
+
 
