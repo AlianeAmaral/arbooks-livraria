@@ -57,41 +57,81 @@ Este projeto também conta com **"Release"**, que mostra duas imagens de cada fa
 
 <h2>🔎 Como Executar o Projeto via Swagger (Visualização do Back-end)</h2>
 
-1. Clone o repositório no seu Visual Studio e acesse a solução:
+1. Caso queira executar por **Linha de Comando** e testar somente a API Backend:
 
 ```directory
 git clone https://github.com/AlianeAmaral/arbooks-livraria.git
+```
+```directory
 cd arbooks-livraria
 ```
-2. No **Gerenciador de Soluções**, clique com botão direito no projeto **"Arbooks.API"**, depois clique em **"Depurar"** e depois em **"Iniciar Nova Instância"**.
-3. Uma página vai abrir automaticamente no seu navegador permitindo realizar os seguintes testes:
+```directory
+dotnet run
+```
+2. Cole o link do Swagger no seu navegador:
 
 * **Link do Swagger:** http://localhost:5013/swagger/index.html
 
 <img src="https://github.com/AlianeAmaral/arbooks-livraria/blob/main/Arbooks.Web/wwwroot/images/apresentacao-swagger.png" width="850">
 
+1. Ou caso queira executar via Visual Studio, clone o repositório e acesse a solução.
+2. No **Gerenciador de Soluções**, clique com botão direito no projeto **"Arbooks.API"**.
+3. Clique em **"Depurar"** e depois em **"Iniciar Nova Instância"**.
+4. Uma página vai abrir automaticamente no seu navegador permitindo realizar os seguintes testes:
+
+📌 Permite testar a busca com letras maiúsculas, minúsculas, acentos, palavras incompletas ou especificações que estão nos detalhes, assim como a ordem de preço crescente ou decrescente, tanto para a lista total quanto para os resultados de uma busca:
+
 ```directory
 GET book/search
 ```
-* Permite testar a busca com letras maiúsculas, minúsculas, acentos, palavras incompletas ou especificações que estão nos detalhes, assim como a ordem de preço crescente ou decrescente, tanto para a lista total quanto para os resultados de uma busca.
+💭 Sugestões de entrada, para busca:
+```directory
+    jou
+```
+```directory
+    éd
+```
+💭 Sugestões de entrada, para ordenar preço, teste com lista total **e** com busca filtrada:
+```directory
+    k
+```
+* *priceAsc* para ascendente.
+* *priceDesc* para decrescente.
+
+📌 Permite testar a exibição dos detalhes por ID:
 ```directory
 GET book/details
 ```
-* Permite testar a exibição dos detalhes por ID.
+💭 Sugestão de entrada, para exibir detalhes:
+```directory
+    2
+```
+
+📌 Permite testar o cálculo de frete por ID:
 ```directory
 GET book/calculateshipping
 ```
-* Permite testar o cálculo de frete por ID.
+💭 Sugestões de entrada, para busca:
+```directory
+    1
+```
+```directory
+    4
+```
 
 <h2>🖼️ Como Executar o Projeto (Visualização com Front-end)</h2>
 
 1. É necessário configurar para que o back-end inicie junto com o front-end, para isso siga os próximos passos.
 2. Clique com o botão direito no projeto **"Arbooks.API"** e depois em **"Configurar Projetos de Inicialização"**.
-3. Deixe **"Arbooks.API"** e **"Arbooks.Web"** com a ação de **"Iniciar"**, e deixe-os nesta sequência: primeiro Arbooks.API e segundo Arbooks.Web.
+3. Deixe **"Arbooks.API"** e **"Arbooks.Web"** com a ação de **"Iniciar"**, e deixe-os nesta sequência: 
+
+* 1º: Arbooks.API
+* 2º: Arbooks.Web
+
 4. Clique em **"Ok"** e inicie o projeto na interface da IDE ou no terminal com: dotnet run.
 5. Uma página do navegador deve abrir o site com back-end e front-end funcionando para você interagir igual o gif apresentado mais ao topo desse README.
    
-<h2>🧪 Como Executar os Testes</h2>
+<h2>🧪 Como Executar os Testes Unitários</h2>
 
 1. Conferir se o projeto está parado.
 2. Clique com botão direito no projeto **"Arbooks.Test"** e depois em **"Executar Testes"**.
@@ -137,7 +177,7 @@ arbooks-livraria/
 └── README
 ```
 
-<h2>💾 Proposta Inicial do Teste</h2>
+<h2>💾 Proposta Inicial do Cliente</h2>
 
 Um cliente tem necessidade de buscar livros em um catálogo. Esse cliente quer ler e buscar esse catálogo de um arquivo JSON, e esse arquivo não pode ser modificado. Então com essa informação, é preciso desenvolver:
 
@@ -159,6 +199,7 @@ Para nos enviar o código, crie um fork desse repositório e quando finalizar, m
 O projeto deve ser desenvolvido em C#, utilizando o .NET Core 3.1 ou superior.
 
 Gostaríamos que fosse evitado a utilização de frameworks, e que tivesse uma explicação do que é necessário para funcionar o projeto e os testes.
+
 
 
 
