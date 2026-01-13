@@ -3,13 +3,15 @@
         <img src="https://github.com/AlianeAmaral/Test/blob/main/icon-arbooks.gif" width="90">
     </td>
     <td width="750">
-        <h1>Arbooks API - Catálogo de Livros</h1>
+        <h1>Arbooks API - Catálogo de Livros ✨</h1>
     </td>
 </table>
 
 <h2>📝 Sobre o Projeto </h2>
 
-Projeto com **back-end e front-end** desenvolvido com API RESTful para um **desafio técnico**, com intuito de criar um **serviço de catálogo de livros** a partir de um arquivo JSON estático, que não podia ser modificado. <br><br> Foi construído com **C#, ASP .NET Core (Versão 8.0), HTML, CSS e Javascript, com arquitetura em camadas.** Este projeto fornece funcionalidades de **busca flexível, ordenação por preço, cálculo de frete e exibição de detalhes** utilizando rotas. <br><br> Foi iniciado primeiro como monólito no dia 09/01/26 mas depois alterado para microsserviços para entrega em 12/01/26. Como arquivo JSON estava em **inglês**, foi mantido o mesmo **idioma inglês como padrão para todo desenvolvimento**.
+Projeto com **Back-end e Front-end** desenvolvido com API RESTful para um **desafio técnico**, com intuito de criar um **catálogo de livros** a partir de um arquivo JSON estático, que não podia ser modificado. <br><br> Foi construído com **C#, ASP .NET Core (Versão 8.0), HTML, CSS e Javascript, com arquitetura em camadas.** Este projeto fornece funcionalidades de **busca flexível, ordenação por preço, cálculo de frete e exibição de detalhes** utilizando **rotas**. <br><br> Iniciado primeiro como monólito no dia 09/01/26 mas depois alterado para microsserviços para entrega com front-end em 12/01/26. Como o arquivo JSON estava em **inglês**, foi mantido o mesmo **idioma inglês como padrão para seguir com todo desenvolvimento em código**.
+
+<img src="https://github.com/AlianeAmaral/arbooks-livraria/blob/main/Arbooks.Web/wwwroot/icon-arbooks.png" width="40">   O nome **“Arbooks”** foi escolhido como uma referência ao Pokémon **Arbok**, do anime *Pokémon*, combinado com a palavra **“Books”**, em alusão ao catálogo de livros proposto.
 
 <h2>👩🏻‍💻 Desenvolvimentos Realizados</h2>
 
@@ -52,7 +54,7 @@ Projeto com **back-end e front-end** desenvolvido com API RESTful para um **desa
 git clone https://github.com/AlianeAmaral/arbooks-livraria.git
 cd arbooks-livraria
 ```
-2. Clique com botão direito no projeto **"Arbooks.API"**, depois clique em **"Depurar"** e depois em **"Iniciar Nova Instância"**.
+2. No **Gerenciador de Soluções**, clique com botão direito no projeto **"Arbooks.API"**, depois clique em **"Depurar"** e depois em **"Iniciar Nova Instância"**.
 3. Uma página vai abrir automaticamente no seu navegador permitindo realizar os seguintes testes:
 
 * **Link do Swagger:** http://localhost:5013/swagger/index.html
@@ -77,22 +79,31 @@ GET book/calculateshipping
 Este projeto também conta com **"Release"**, que mostra duas imagens de cada fase do desenvolvimento:
 
 * **Version1-BackendOnly:** Mostra como ficou a interface somente com o back-end.
-* **Version2 - Backend-Frontend:** Mostra como ficou a interface com back-end e front-end.
+* **Version2-Backend-Frontend:** Mostra como ficou a interface com back-end e front-end.
 
 * **Link dos Releases**: https://github.com/AlianeAmaral/arbooks-livraria/releases
 
 <h2>🖼️ Como Executar o Projeto (Visualização com Front-end)</h2>
 
-1. É necessário configurar para que o back-end inicie junto com o front-end.
+1. É necessário configurar para que o back-end inicie junto com o front-end, para isso siga os próximos passos.
 2. Clique com o botão direito no projeto **"Arbooks.API"** e depois em **"Configurar Projetos de Inicialização"**.
-3. Deixe **"Arbooks.API"** e **"Arbooks.Web"**, com a ação de **"Iniciar"**, nesta sequência, primeiro API e segundo Web.
-4. Clique em **"Ok"** e inicie o projeto na interface da IDE.
-5. Uma página do navegador deve abrir o site com back-end e front-end funcionando para você interagir.
+3. Deixe **"Arbooks.API"** e **"Arbooks.Web"** com a ação de **"Iniciar"**, e deixe-os nesta sequência: primeiro Arbooks.API e segundo Arbooks.Web.
+4. Clique em **"Ok"** e inicie o projeto na interface da IDE ou no terminal com: dotnet run.
+5. Uma página do navegador deve abrir o site com back-end e front-end funcionando para você interagir igual o gif apresentado mais ao topo desse README.
    
 <h2>🧪 Como Executar os Testes</h2>
 
 1. Conferir se o projeto está parado.
 2. Clique com botão direito no projeto **"Arbooks.Test"** e depois em **"Executar Testes"**.
+3. **No Gerenciador de Testes**, será apresentado o resultado de cada teste.
+
+✨ **O que está sendo testado?**
+
+* Apresentação do catálogo JSON.
+* Busca por palavra independente de maiúsculas, minúsculas, acentuações, palavras incompletas ou dados que estão nos detalhes.
+* Busca não encontrada, que deve retornar resultado vazio.
+* Ordem crescente ou decrescente, na lista completa e na lista de resultados de uma busca.
+* Cálculo do frete por ID do objeto.
 
 <h2>🗂️ Estrutura do Projeto </h2>
 
@@ -148,6 +159,7 @@ Para nos enviar o código, crie um fork desse repositório e quando finalizar, m
 O projeto deve ser desenvolvido em C#, utilizando o .NET Core 3.1 ou superior.
 
 Gostaríamos que fosse evitado a utilização de frameworks, e que tivesse uma explicação do que é necessário para funcionar o projeto e os testes.
+
 
 
 
