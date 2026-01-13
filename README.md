@@ -31,7 +31,7 @@ Projeto com **Back-end e Front-end** desenvolvido com API RESTful para um **desa
 <h2>👾 Tecnologias Utilizadas</h2>
 
 * .NET Core 8 (Framework principal de desenvolvimento)
-* ASP .NET Core Web MVC (Arquitetura de API e MVC)
+* ASP .NET Core Web MVC e API (Arquitetura de API e MVC)
 * Visual Studio Community 17.12.1 (IDE de desenvolvimento)
 
 **✨ O projeto também segue boas práticas de:**
@@ -39,7 +39,6 @@ Projeto com **Back-end e Front-end** desenvolvido com API RESTful para um **desa
 * Conventional Commits
 * SOLID
 * Clean Code
-* Clean Architecture
 
 <h2>📦 Requisitos para Execução</h2>
 
@@ -200,6 +199,7 @@ Para nos enviar o código, crie um fork desse repositório e quando finalizar, m
 O projeto deve ser desenvolvido em C#, utilizando o .NET Core 3.1 ou superior.
 
 Gostaríamos que fosse evitado a utilização de frameworks, e que tivesse uma explicação do que é necessário para funcionar o projeto e os testes.
+
 
 
 
